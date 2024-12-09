@@ -1,0 +1,57 @@
+# PRIMER PUNTO
+
+print ("PROGRAMA PARA HALLAR EL CUADRADO DE UN NUMERO")
+
+## esta variable la declaramos para que el usuario ingrese un numero para poder calcular el cuadrado
+numero=int(input("Ingrese un numero entero: "))
+
+# El condicional if es para poder validar que el usuario halla ingresado un numero positivo para poder hacer el calculo
+
+#En esta primera opcion si es negativo se le indica al usuario que debe ser mayor el numero ingresado a 0
+if numero <= 0:
+   print ("La cantidad debe ser mayor a 0") 
+
+#En el else se imprime el cuadrado si el usuario ingreso un numero positivo
+elif numero >= 1:
+    print ("El cuadrado del numero ingresado es",numero**2)
+
+
+ # SEGUNDO PUNTO
+     
+# Se pide un numero al usurio para empezar con el programa
+
+variable =int(input("Ingrese un numero para empezar con el programa: "))
+continuar =True
+
+
+while continuar:
+
+ if ( variable %2) == 0:
+      division = variable/2
+     
+      print (division)
+      break
+   
+
+ if (variable %2) != 0:
+     operacion= variable*3+1
+
+     print ("\t\t",operacion)
+     break
+ 
+ if variable == 1:
+         continuar = False
+
+
+  # PUNTO 3
+
+pais_a= 25000000
+pais_b= 18900000
+
+for i in (2022,2150,1):
+    
+   n1= pais_a*0.02
+   n2= pais_b*0.03
+
+   if pais_a == pais_b:
+       print (i)
